@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Event Handling</title>
+<style>
+div{
+	align-content:float;
+	margin-top:10px;
+}
+</style>
+</head>
+<body onload="loadme">
+<div>
+<h1>EVENT HANDLING</h1>
+</div>
+<div>
+<h3>MOUSE EVENTS</h3>
+</div>
+<div style="background-color:red;height:50px;width:200px;padding:8px;" onclick="func1()">
+<h3>OnClick</h3>
+</div>
+<div style="background-color:blue;height:50px;width:200px;padding:8px;" ondblclick="func2()">
+<h3>OnDblClick</h3>
+</div>
+<div style="background-color:green;height:50px;width:200px;padding:8px;" onmouseover="func3()">
+<h3>OnMouseOver</h3>
+</div>
+<div style="background-color:yellow;height:50px;width:200px;padding:8px;" onmousedown="func4()">
+<h3>OnMouseDown</h3>
+</div>
+<div style="background-color:orange;height:50px;width:200px;padding:8px;" onmouseup="func5()">
+<h3>OnMouseUp</h3>
+</div>
+<div style="background-color:grey;height:50px;width:200px;padding:8px;" onmouseout="func6()">
+<h3>OnMouseOut</h3>
+</div>
+<div style="background-color:purple;height:50px;width:200px;padding:8px;" ondblclick="func2()">
+<h3>OnDblClick</h3>
+</div>
+<div>
+<h3>KEYBOARD EVENT</h3>
+</div>
+<div style="background-color:pink;height:80px;width:200px;padding:8px;">
+<h3>OnkeyPress</h3>
+<input type="text" onkeypress="disp1()">
+</div>
+<div style="background-color:#446;height:80px;width:200px;padding:8px;">
+<h3>OnkeyUp</h3>
+<input type="text" onkeyup="disp2()">
+</div>
+<div style="background-color:#980;height:80px;width:200px;padding:8px;">
+<h3>OnkeyDown</h3>
+<input type="text" onkeydown="disp3()">
+</div>
+<div>
+<h3>FORM EVENTS</h3>
+</div>
+<div style="background-color:#710;height:80px;width:200px;padding:8px;">
+<h3>OnBlur</h3>
+<input type="text" onblur="form1()">
+</div>
+<div style="background-color:#231;height:80px;width:200px;padding:8px;">
+<h3>OnFocus</h3>
+<input type="text" onfocus="form2()">
+</div>
+
+<div style="background-color:#160;height:80px;width:200px;padding:8px;">
+<h3>OnSelect</h3>
+<input type="text" onselect="form3()">
+</div>
+<div style="background-color:#581;height:80px;width:200px;padding:8px;">
+<h3>OnChange</h3>
+<input type="text" onchange="form4()">
+</div>
+<div style="background-color:#831;height:80px;width:200px;padding:8px;">
+<h3>OnInput</h3>
+<input type="text" oninput="form5()">
+</div>
+<script>
+function loadme(){
+	alert("HELLO WELCOME..!!");
+}
+function func1(){
+	alert("Mouse-Single click..!");
+}
+function func2(){
+	alert("Mouse-Double click..!");
+}
+function func3(){
+	alert("On Mouse Over..!!");
+}
+function func4(){
+	alert("On Mouse Down..!!");
+}
+function func5(){
+	alert("Om Mouse Up..!!");
+}
+function func6(){
+	alert("On Mouse Out..!!");
+}
+function disp1(){
+	alert("On key Press..!!");
+}
+function disp2(){
+	alert("On key Up..!!");
+}
+function disp3(){
+	alert("On Key Down..!!");
+}
+function form1(){
+	alert("i/p field loses focus..!");
+}
+function form2(){
+	alert("i/p field gets focus..!");
+}
+function form3(){
+	alert("i/p text gets selected..!");
+}
+function form4(){
+	alert("text is modified..!")
+}
+
+function form5(){
+	alert("text is writen in i/p field..!")
+}
+
+
+</script>
+</body>
+</html>
